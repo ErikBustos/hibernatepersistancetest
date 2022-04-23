@@ -15,7 +15,7 @@ public class App
     {
         StudentDao studentDao = new StudentDao();
         Student student = new Student("Ramesh", "Fadatare", "rameshfadatare@javaguides.com");
-        //studentDao.saveStudent(student);
+        studentDao.saveStudent(student);
 
         List < Student > students = studentDao.getStudents();
         System.out.println(students.get(0).toString());
